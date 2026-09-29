@@ -8,9 +8,9 @@ Luồng một request tới /ask:
                                        │
                                     ask_llm
                                        │
-                              store.append × 2 ──► cost_guard.record ──► log_event
+                           store.append × 2 ──► cost_guard.record ──► log_event
 """
-
+# Checkpoint 0: setup environment
 from __future__ import annotations
 
 from contextlib import asynccontextmanager
